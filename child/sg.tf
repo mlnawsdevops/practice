@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg" {
-    name = "${project}-${environment}"
+    name = "${var.project}-${var.environment}"
     description = "This is the security group to allow ports"
 
     egress {
